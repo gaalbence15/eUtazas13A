@@ -11,7 +11,7 @@ export default class Megoldas {
     }
 
     public get ervenytelenFelszallas(): number {
-        return this._utasAdatok.filter(x => !x.ervenyesFelszallas).length;
+        return this._utasAdatok.filter(x => x.ervenyesFelszallas).length;
     }
 
     constructor(forras: string) {
